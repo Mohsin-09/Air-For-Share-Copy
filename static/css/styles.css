@@ -1,0 +1,199 @@
+/* Resetting Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    color: #374151;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Input and Form Styles */
+input.form-control, textarea.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Button Colors */
+.btn-primary {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0056b3, #003f7f);
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background: linear-gradient(to right, #28a745, #218838);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #218838, #1e7e34);
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #dc3545, #bd2130);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #bd2130, #8b1e24);
+    transform: scale(1.05);
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Toast Notifications */
+.toast {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    border-radius: 8px;
+    animation: slideIn 0.5s ease-out;
+}
+
+.toast-body {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* File List Styles */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #343a40;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+/* Shared Text Styles */
+.bg-light {
+    background: rgba(245, 245, 245, 0.8);
+    padding: 1rem;
+    border-radius: 12px;
+}
+.card2-body {
+    padding: 1rem;
+}
+
+/* Shared Text Styles */
+.bg2-light {
+    background: rgba(245, 245, 245, 0.8);
+    padding: 1rem;
+    border-radius: 12px;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Grid */
+.row {
+    margin: 0 -0.5rem;
+}
+
+.col-md-4 {
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 8px;
+}
